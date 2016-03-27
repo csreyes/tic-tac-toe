@@ -1,16 +1,26 @@
-import React from 'react'
 import { connect } from 'react-redux'
-import Squares from '../components/Squares'
+import { toggleSquare } from '../actions/const'
+import SquareWrapper from '../components/SquareWrapper'
 
-let Board = () => {
-  return <div className="board">
-    <h1>Board</h1>
-    <Squares />
-    <Squares />
-    <Squares />
-    <Squares />
-  </div>
+const mapStateToProps = (state) => {
+  return {
+    board: state.board,
+    player: state.player
+  }
 }
-Board = connect()(Board)
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSquareClick: (squareKey, player) => {
+      debugger;
+      dispatch(toggleSquare(squareKey, player))
+    }
+  }
+}
+
+const Board = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SquareWrapper)
 
 export default Board

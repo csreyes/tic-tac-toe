@@ -1,7 +1,9 @@
 /* Base Application Styles */
+
+
 body {
   color: #fff;
-  background: #222;
+  background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
 }
 
 .index img {
@@ -18,4 +20,43 @@ body {
   border: 1px solid #000;
   border-width: 1px 0;
   background: #666;
+}
+
+.board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -360px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.row {
+  height: 33%;
+}
+
+.square {
+  height: 100%;
+}
+
+.square.top {
+    border-bottom-style: solid;
+}
+
+.square.bottom {
+    border-top-style: solid;
+}
+
+.square.left {
+    clear: both;
+    border-right-style: solid;
+}
+
+.square.right {
+    border-left-style: solid;
 }

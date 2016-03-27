@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 let Scores = () => {
   return <div className="scores">
-    <h1>Scores</h1>
+    <h1></h1>
   </div>
 }
 Scores = connect()(Scores)
