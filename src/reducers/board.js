@@ -9,6 +9,8 @@ const board = (state = createInitialBoard(), action) => {
         return square;
       })
       return newState
+    case 'RESET_BOARD':
+      return createInitialBoard();
     default:
       return state
   }

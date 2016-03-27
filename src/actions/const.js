@@ -13,9 +13,8 @@ export const switchPlayer = (player) => {
   }
 }
 
-export const checkForWinner = (player) => {
+export const resetBoard = () => {
   return {
-    type: 'CHECK_FOR_WINNER',
-    player
+    type: 'RESET_BOARD'  
   }
 }
