@@ -16,7 +16,7 @@ const layoutSquares = (board, player, onSquareClick) => {
     }
     columns.push((<Square squareProps={board[i]} player={player} onSquareClick={onSquareClick} key={i}/>))
   }
-
+  // at the end of loop, wrap the last column in row and push to results
   result.push((<Row columns={columns} key={row}/>))
 
   return result

@@ -16,7 +16,7 @@ export const switchPlayer = (player) => {
 
 export const resetBoard = () => {
   return {
-    type: 'RESET_BOARD'  
+    type: 'RESET_BOARD'
   }
 }
 

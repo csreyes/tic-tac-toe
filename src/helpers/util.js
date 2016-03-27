@@ -3,7 +3,7 @@ export const shouldSwitchPlayer = (currentProps, nextProps) => {
   const nextBoard = nextProps.board;
   const boardHasChanged = JSON.stringify(currentBoard) !== JSON.stringify(nextBoard)
 
-  // switch player when the board has changed and there is no tie or winner, 
+  // switch player when the board has changed and there is no tie or winner,
   // however, keep player if previous game state was winner
   if (boardHasChanged && nextProps.gameState === 'IN_PROGRESS' && currentProps.gameState !== 'WINNER') {
     currentProps.switchPlayer(currentProps.player);

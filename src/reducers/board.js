@@ -29,7 +29,7 @@ const createInitialBoard = () => {
   'square bottom right'
   ];
 
-  // Add bit value to each square so we can compute if there is a winner 
+  // Add bit value to each square so we can compute if there is a winner
   var bitValue = 1;
   return squareIdentifiers.map((identifier, index) => {
     let squareProps = {

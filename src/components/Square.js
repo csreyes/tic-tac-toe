@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 const Square = ({squareProps, player, onSquareClick}) => {
   let value, onClick, className;

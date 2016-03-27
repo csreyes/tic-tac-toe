@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 
 class Score extends Component {
   render() {
@@ -22,14 +21,6 @@ class Score extends Component {
           </div>
         </div>
       )
-  }
-}
-
-const mapStateToProps = (state) => {
-  return {
-    player: state.player,
-    score: state.score,
-    gameState: state.gameStates
   }
 }
 

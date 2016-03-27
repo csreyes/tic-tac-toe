@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { toggleSquare, switchPlayer, resetBoard, addWin, addTie } from '../actions/const'
 import { shouldSwitchPlayer, updateScore } from '../helpers/util'
