@@ -16,7 +16,8 @@ const reducers = combineReducers({
   board,
   player,
   score,
-  gameState: (state = {}) => state 
+  gameState: (state = {}) => state // added to combineReducers to avoid key warning
 });
 
+// Add reducers to reduceReducer to compute game state from current board state
 module.exports = reduceReducers(reducers, gameState)

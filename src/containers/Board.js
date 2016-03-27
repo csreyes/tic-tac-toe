@@ -8,6 +8,7 @@ import Score from '../components/Score'
 
 class Board extends Component {
   componentWillUpdate(nextProps) {
+    // after the board changes, either update score or swtich player
     updateScore(this.props, nextProps)
     shouldSwitchPlayer(this.props, nextProps);
   }

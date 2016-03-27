@@ -1,3 +1,4 @@
+// Component that outputs 3x3 bootrstrap grid
 import React from 'react'
 import Square from './Square'
 import Row from './Row'

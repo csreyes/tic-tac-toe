@@ -11,6 +11,7 @@ body {
 }
 
 /* board-specific styles */
+
 .board {
   height: 75%;
   width: 90%;
@@ -102,6 +103,7 @@ body {
 }
 
 /* Misc */
+
 .game-port {
   position: absolute;
   top: 50%;
