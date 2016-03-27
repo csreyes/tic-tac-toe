@@ -1,3 +1,4 @@
+// Board-specific sctions
 export const toggleSquare = (squareKey, player) => {
   return {
     type: 'TOGGLE_SQUARE',
@@ -19,6 +20,8 @@ export const resetBoard = () => {
   }
 }
 
+
+// Score-specific actions
 export const addWin = (player) => {
   return {
     type: 'ADD_WIN',
