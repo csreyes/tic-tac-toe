@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { toggleSquare } from '../actions/const'
+import { toggleSquare, switchPlayer } from '../actions/const'
 import SquareWrapper from '../components/SquareWrapper'
 
 const mapStateToProps = (state) => {
@@ -12,8 +12,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onSquareClick: (squareKey, player) => {
-      debugger;
       dispatch(toggleSquare(squareKey, player))
+      dispatch(switchPlayer(player))
     }
   }
 }

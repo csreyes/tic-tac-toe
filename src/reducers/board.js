@@ -1,7 +1,14 @@
 const board = (state = createInitialBoard(), action) => {
   switch (action.type) {
     case 'TOGGLE_SQUARE':
-      return state
+      const fillInValue = action.player === 'player1' ? 'x' : 'o';
+      const newState = state.map((square) => {
+        if (square.key === action.squareKey) {
+          return Object.assign({}, square, {value: fillInValue})
+        }
+        return square;
+      })
+      return newState
     default:
       return state
   }
