@@ -27,12 +27,17 @@ const createInitialBoard = () => {
   'square bottom right'
   ];
 
+  var bitValue = 1;
   return squareIdentifiers.map((identifier, index) => {
-    return {
+    let squareProps = {
       class: identifier,
       key: index,
-      value: null
+      value: null,
+      bitValue
     }
+
+    bitValue *= 2;
+    return squareProps;
   });
 }
 

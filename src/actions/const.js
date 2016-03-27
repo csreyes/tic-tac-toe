@@ -12,3 +12,10 @@ export const switchPlayer = (player) => {
     player
   }
 }
+
+export const checkForWinner = (player) => {
+  return {
+    type: 'CHECK_FOR_WINNER',
+    player
+  }
+}
