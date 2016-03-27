@@ -1,54 +1,20 @@
 /* Base Application Styles */
-
-
 body {
-  color: #fff;
   background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+  color: #fff;
   overflow-x: hidden;
 }
 
 .header {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.game-port {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  height: 800px;
-  margin-left: -300px;
-  margin-top: -360px;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
-}
-
-.score {
-  bottom: 0px;
-  width: 100%;
-  height: 25%
-}
-
-.restart-overlay {
-  height: 75%;
-  width: 100%;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:9999;
-  background-color: rgba(0,0,0,0.2);
-}
-
+/* board-specific styles */
 .board {
   height: 75%;
   width: 90%;
 }
-
 
 .row {
   height: 33%;
@@ -83,4 +49,87 @@ body {
 
 .score-container {
   text-align: center;
+}
+
+/* X's and O's styling */
+
+.o {
+    left: 16.666666667%;
+    top: 16.666666667%;
+    width: 66.666666667%;
+    height: 66.666666667%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 20px solid #fff;
+}
+
+
+.square .x,.square .o {
+    position: relative;
+    will-change: transform;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-animation: appear 0.15s cubic-bezier(0.5,1.8,0.1,1.1);
+    -moz-animation: appear 0.15s cubic-bezier(0.5,1.8,0.1,1.1);
+    animation: appear 0.15s cubic-bezier(0.5,1.8,0.1,1.1);
+}
+
+.x:before,.x:after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #fff;
+    left: 65px;
+    top: 20px;
+    width: 20px;
+    height: 160px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.x:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.x:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Misc */
+.game-port {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 800px;
+  margin-left: -300px;
+  margin-top: -360px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.restart-overlay {
+  height: 75%;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.score {
+  bottom: 0px;
+  width: 100%;
+  height: 25%
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-// import {  } from '../actions/const'
 
 class Score extends Component {
   render() {
@@ -9,16 +8,16 @@ class Score extends Component {
         <div className="container-fluid">
           <div className="score row">
             <div className="score-container col-md-4 col-xs-4 col-s-4">
-              <div className="score-heading">Player 1 (X)</div>
-              <div className="score-value">{score.player1}</div>
+              <h3 className="score-heading">Player 1 (X)</h3>
+              <h4 className="score-value">{score.player1}</h4>
             </div>
             <div className="score-container col-md-4 col-xs-4 col-s-4">
-              <div className="score-heading">Ties</div>
-              <div className="score-value">{score.ties}</div>
+              <h3 className="score-heading">Ties</h3>
+              <h4 className="score-value">{score.ties}</h4>
             </div>
             <div className="score-container col-md-4 col-xs-4 col-s-4">
-              <div className="score-heading">Player 2 (O)</div>
-              <div className="score-value">{score.player2}</div>
+              <h3 className="score-heading">Player 2 (O)</h3>
+              <h4 className="score-value">{score.player2}</h4>
             </div>
           </div>
         </div>
