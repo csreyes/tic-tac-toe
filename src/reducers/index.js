@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import board from './board'
 import player from './player'
+import score from './score'
 import gameState from './gameState'
 /* Populated by react-webpack-redux:reducer */
 
@@ -15,6 +16,7 @@ const reduceReducers = (...reducers) => {
 const reducers = combineReducers({
   board,
   player,
+  score,
   gameState: (state = {}) => state 
 });
 

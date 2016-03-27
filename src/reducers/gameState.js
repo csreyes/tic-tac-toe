@@ -7,8 +7,6 @@ const gameState = (state = null, action) => {
   const computedState = Object.assign({}, state, {gameState})
 
   switch (action.type) {
-    case 'RESTART_GAME':
-      return computedState
     default:
       return computedState
   }

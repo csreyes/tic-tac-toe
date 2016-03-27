@@ -1,5 +1,4 @@
 export const computeGameState = (board) => {
-  const winValues = [7, 56, 448, 73, 146, 292, 273, 84];
   const player1Score = computePlayerScore(board, 'player1');
   const player2Score = computePlayerScore(board, 'player2');
   const movesLeft =  computeMovesLeft(board);
@@ -13,6 +12,7 @@ export const computeGameState = (board) => {
     return 'IN_PROGRESS'
   }
 }
+const winValues = [7, 56, 448, 73, 146, 292, 273, 84];
 
 const computePlayerScore = (board, player) => {
   const playerSymbol = player === 'player1' ? 'x' : 'o';

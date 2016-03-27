@@ -18,3 +18,17 @@ export const resetBoard = () => {
     type: 'RESET_BOARD'  
   }
 }
+
+export const addWin = (player) => {
+  return {
+    type: 'ADD_WIN',
+    player
+  }
+}
+
+export const addTie = () => {
+  return {
+    type: 'ADD_TIE'
+  }
+}
+
