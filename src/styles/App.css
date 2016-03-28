@@ -8,12 +8,13 @@ body {
 .header {
   text-align: center;
   padding-top: 10px;
+  height: 20%;
 }
 
 /* board-specific styles */
 
 .board {
-  height: 75%;
+  height: 80%;
   width: 90%;
 }
 
@@ -119,7 +120,7 @@ body {
 }
 
 .restart-overlay {
-  height: 75%;
+  height: 100%;
   width: 100%;
   position:absolute;
   top:0;

@@ -5,6 +5,7 @@ import { shouldSwitchPlayer, updateScore } from '../helpers/util'
 import SquareWrapper from '../components/SquareWrapper'
 import RestartOverlay from '../components/RestartOverlay'
 import Score from '../components/Score'
+import Header from '../components/Header'
 
 class Board extends Component {
   componentWillUpdate(nextProps) {
@@ -16,6 +17,7 @@ class Board extends Component {
   render() {
       return (
         <div className="game-port">
+          <Header gameState={this.props.gameState} player={this.props.player} />
           <SquareWrapper board={this.props.board} player={this.props.player} onSquareClick={this.props.onSquareClick} />
           <Score score={this.props.score} />
           <RestartOverlay gameState={this.props.gameState} onRestartOverlayClick={this.props.onRestartOverlayClick} />
