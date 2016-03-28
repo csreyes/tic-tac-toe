@@ -22,7 +22,7 @@ const layoutSquares = (board, player, onSquareClick) => {
   return result
 }
 
-let SquareWrapper = ({board, player, onSquareClick}) => {
+const SquareWrapper = ({board, player, onSquareClick}) => {
   let squares = layoutSquares(board, player, onSquareClick);
 
   return <div className="board container-fluid">

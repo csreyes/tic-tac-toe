@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-let Header = ({gameState, player}) => {
+const Header = ({gameState, player}) => {
   let subheader;
   if (gameState === 'WINNER') {
     subheader = (<h2 className="message-subheader">{capitalize(player.concat(' wins!'))}</h2>)
