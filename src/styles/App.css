@@ -8,13 +8,13 @@ body {
 .header {
   text-align: center;
   padding-top: 10px;
-  height: 20%;
+  height: 15%;
 }
 
 /* board-specific styles */
 
 .board {
-  height: 80%;
+  height: 85%;
   width: 90%;
 }
 
